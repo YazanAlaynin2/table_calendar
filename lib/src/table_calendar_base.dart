@@ -163,14 +163,14 @@ class _TableCalendarBaseState extends State<TableCalendarBase> {
         final jumpIndex =
             currentIndex > _previousIndex ? currentIndex - 1 : currentIndex + 1;
 
-        _pageController.jumpToPage(jumpIndex);
+        // _pageController.jumpToPage(jumpIndex);
       }
 
-      _pageController.animateToPage(
-        currentIndex,
-        duration: widget.pageAnimationDuration,
-        curve: widget.pageAnimationCurve,
-      );
+      // _pageController.animateToPage(
+      //   currentIndex,
+      //   duration: widget.pageAnimationDuration,
+      //   curve: widget.pageAnimationCurve,
+      // );
     } else {
       _pageController.jumpToPage(currentIndex);
     }
